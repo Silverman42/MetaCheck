@@ -6,7 +6,7 @@ const scrapper = require('./controller/ScrapeController');
 app.get('/fetch',scrapper)
 app.get('*',(req,res)=>{
     res.status(404).json({
-        error : `You entered an invalid route. Please, enter this route -> '/fetch', to fetch the metadata of website`
+        error : `You entered an invalid route. Please, enter this route -> '/fetch ', to fetch the metadata of website`
     })
 })
 app.listen(port,()=>{
