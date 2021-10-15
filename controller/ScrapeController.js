@@ -31,7 +31,9 @@ module.exports = async (req, res) => {
         return res.status(403).json(validation.errors.all())
     }
     console.log('Starting meta search')
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch({
+        args: ["--no-sandbox", "--disable-setuid-sandbox"]
+      })
     try {
         const page = await browser.newPage()
         await page.setViewport({
