@@ -33,6 +33,12 @@ yarn start
 
 ### API endpoint
 
-| Endpoint | Request parameter | Data type | Response                                                                            |
-| -------- | ----------------- | --------- | ----------------------------------------------------------------------------------- |
-| /fetch   | `url`             | `String`  | `success: {"message": "Metadata succesfully searched","pageTitle": "","data": [] }` |
+| Endpoint | Request parameter | Data type | Response                                                                            | Method |
+| -------- | ----------------- | --------- | ----------------------------------------------------------------------------------- | ------ |
+| /fetch   | `url`             | `String`  | `success: {"message": "Metadata succesfully searched","pageTitle": "","data": [] }` | `POST` |
+
+### Test Endpoint
+
+http://metacheck.herokuapp.com/
+
+Test endpoint using test suites like Postman and PostWoman
