@@ -33,9 +33,9 @@ yarn start
 
 ### API endpoint
 
-| Endpoint | Request parameter | Data type | Response                                                                            | Method |
-| -------- | ----------------- | --------- | ----------------------------------------------------------------------------------- | ------ |
-| /fetch   | `url`             | `String`  | `success: {"message": "Metadata succesfully searched","pageTitle": "","data": [] }` | `POST` |
+| Endpoint   | Request parameter | Data type | Response                                                                            | Method |
+| ---------- | ----------------- | --------- | ----------------------------------------------------------------------------------- | ------ |
+| /api/fetch | `url`             | `String`  | `success: {"message": "Metadata succesfully searched","pageTitle": "","data": [] }` | `POST` |
 
 ### Test Endpoint
 
